@@ -91,11 +91,11 @@ export function AnimatedSplash({ ready, onFinish }: Props) {
           resizeMode="contain"
         />
       </Animated.View>
-      <Animated.Text
+      {/* <Animated.Text
         style={[styles.title, { opacity: titleOpacity, transform: [{ translateY: titleY }] }]}
       >
         Ma Reform
-      </Animated.Text>
+      </Animated.Text> */}
     </Animated.View>
   );
 }

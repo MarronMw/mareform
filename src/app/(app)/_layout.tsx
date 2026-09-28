@@ -5,7 +5,7 @@ import { type ComponentProps } from 'react';
 import { useThemeColors } from '@/hooks/use-theme-colors';
 
 type IconName = ComponentProps<typeof Ionicons>['name'];
-type TabIconProps = { color: string | undefined; size: number; focused: boolean };
+type TabIconProps = { color: any; size: number; focused: boolean };
 
 const tabIcon =
   (active: IconName, inactive: IconName) =>

@@ -21,10 +21,10 @@ export default function AppTabs() {
       <TabSlot style={{ height: '100%' }} />
       <TabList asChild>
         <CustomTabList>
-          <TabTrigger name="vote" href="/(app)" asChild>
+          <TabTrigger name="vote" asChild>
             <TabButton>Vote</TabButton>
           </TabTrigger>
-          <TabTrigger name="profile" href="/(app)/profile" asChild>
+          <TabTrigger name="profile" asChild>
             <TabButton>Profile</TabButton>
           </TabTrigger>
         </CustomTabList>
