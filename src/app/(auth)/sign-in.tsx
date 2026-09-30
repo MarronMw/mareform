@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ActivityIndicator, Button } from 'react-native';
+import { ActivityIndicator, Button, StyleSheet } from 'react-native';
 
 import { ScreenPlaceholder } from '@/components/screen-placeholder';
 import { useAuth } from '@/features/auth/auth-context';
@@ -19,7 +19,13 @@ export default function SignInScreen() {
 
   return (
     <ScreenPlaceholder title="Daeyang Voting">
-      {busy ? <ActivityIndicator /> : <Button title="Sign in (demo)" onPress={handleSignIn} />}
+      {busy ? <ActivityIndicator /> : <Button color={'tomato'}  title="Sign in (demo)" onPress={handleSignIn} />}
     </ScreenPlaceholder>
   );
 }
+
+const styles=StyleSheet.create({
+  btn:{
+    backgroundColor:'#ff0099',
+  }
+});
